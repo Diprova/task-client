@@ -1,0 +1,26 @@
+// ALERT
+export const SET_ALERT = "SET_ALERT";
+export const REMOVE_ALERT = "REMOVE_ALERT";
+
+// AUTH
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAIL = "REGISTER_FAIL";
+export const USER_LOADED = "USER_LOADED";
+export const AUTH_ERROR = "AUTH_ERROR";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT = "LOGOUT";
+
+// PROJECT
+export const PROJECT_RETRIEVE = "PROJECT_RETRIEVE";
+export const PROJECT_ADD = "PROJECT_ADD";
+export const SELECT_PROJECT = "SELECT_PROJECT";
+export const REMOVE_PROJECTS = "REMOVE_PROJECTS";
+
+// TASK
+export const CREATE_NEW_TASK = "CREATE_NEW_TASK";
+export const RETRIEVE_TASKS = "RETRIEVE_TASKS";
+export const SELECT_TASK = "SELECT_TASK";
+export const REMOVE_TASKS = "REMOVE_TASKS";
+export const TIMER_STARTED = "TIMER_STARTED";
+export const TIMER_STOPPED = "TIMER_STOPPED";

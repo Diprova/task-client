@@ -1,0 +1,298 @@
+/* Global Styles */
+@primary-color: #17a2b8;
+@dark-color: #343a40;
+@gray-color: #747474;
+@danger-color: #dc3545;
+@success-color: #28a745;
+@black-color: #202020;
+@white-color: #ffffff;
+@light-color: #f4f4f4;
+@off-white-color: #cccccc;
+
+/* -----APP----- */
+.app {
+  padding-top: 55px;
+  max-width: 1100px;
+  overflow: hidden;
+  @media (max-width: 700px) {
+    padding-top: 96px;
+  }
+}
+.container {
+  padding: 25px 40px;
+  @media (max-width: 700px) {
+    padding: 20px 25px;
+  }
+}
+
+/* -----FORMS----- */
+.form {
+  margin: 20px 0;
+  display: block;
+  margin-top: 0.3rem;
+  color: #888;
+  &-group {
+    margin: 20px 0;
+  }
+  input,
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border: 1px solid @off-white-color;
+  }
+  input[type="submit"],
+  button {
+    font: inherit;
+  }
+}
+
+/* -----MARGIN----- */
+.m {
+  margin: 0.5rem;
+  &-1 {
+    margin: 1rem;
+  }
+  &-2 {
+    margin: 2rem;
+  }
+  &-3 {
+    margin: 3rem;
+  }
+}
+.my {
+  margin: 0.5rem 0;
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+}
+
+/* -----PADDING----- */
+.p {
+  padding: 0.5rem;
+  &-1 {
+    padding: 1rem;
+  }
+  &-2 {
+    padding: 2rem;
+  }
+  &-3 {
+    padding: 3rem;
+  }
+}
+.py {
+  padding: 0.5rem 0;
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+}
+
+/* -----TEXT STYLE----- */
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  @media (max-width: 700px) {
+    font-size: 3rem;
+  }
+}
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  @media (max-width: 700px) {
+    font-size: 2rem;
+  }
+}
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-primary {
+    color: @primary-color;
+  }
+  &-dark {
+    color: @dark-color;
+  }
+  &-gray {
+    color: @gray-color;
+  }
+}
+
+/* -----BUTTON----- */
+.btn {
+  display: inline-block;
+  background: @light-color;
+  color: @black-color;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  &-primary {
+    background: @primary-color;
+    color: @white-color;
+  }
+  &-light {
+    background: @light-color;
+    color: @black-color;
+  }
+  &-dark {
+    background: @dark-color;
+    color: @white-color;
+  }
+  &-danger {
+    background: @danger-color;
+    color: @white-color;
+  }
+  &-success {
+    background: @success-color;
+    color: @white-color;
+  }
+  &-white {
+    background: @white-color;
+    color: @black-color;
+    border: @off-white-color solid 1px;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/* =====ALERT===== */
+.alert {
+  padding: 12px;
+  margin: 16px 0;
+  opacity: 0.9;
+  background: @light-color;
+  color: @black-color;
+  &-dark {
+    background: @dark-color;
+    color: @white-color;
+  }
+  &-danger {
+    background: @danger-color;
+    color: @white-color;
+  }
+  &-success {
+    background: --success-color;
+    color: @white-color;
+  }
+}
+
+/* ----NAVBAR---- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 18px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px @primary-color;
+  opacity: 0.9;
+  background: @dark-color;
+  color: @white-color;
+  ul {
+    display: flex;
+  }
+  a {
+    color: @white-color;
+    padding: 7px;
+    margin: 0 2px;
+    &:hover {
+      color: @primary-color;
+    }
+    .hide-sm {
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    display: block;
+    text-align: center;
+    ul {
+      text-align: center;
+      justify-content: center;
+    }
+    h1 {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+/* ----DASHBOARD---- */
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ----PROJECT PANEL---- */
+.project {
+  background-color: @primary-color;
+  min-width: 180px;
+  min-height: calc(100vh - 55px);
+  &-ele {
+    cursor: pointer;
+    margin: 3px 0;
+    padding: 3px 10px;
+    &:hover {
+      background-color: @dark-color;
+      color: @light-color;
+    }
+  }
+  &-selected {
+    cursor: pointer;
+    margin: 3px 0;
+    padding: 2px 10px;
+    background-color: @dark-color;
+    color: @light-color;
+  }
+}
+
+/* ----WORK PANEL---- */
+.work {
+  width: 100%;
+  &-input {
+    width: calc(100% - 200px);
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border: 1px solid @off-white-color;
+  }
+  &-header {
+    // display: flex;
+  }
+  &-project {
+    width: calc(100% - 164px);
+    display: inline-block;
+  }
+  &-btn {
+    margin: 0;
+    width: 164px;
+    height: 38px;
+  }
+  &-card {
+    padding: 5px 0;
+    border-bottom: 1px solid @off-white-color;
+    cursor: pointer;
+  }
+}
